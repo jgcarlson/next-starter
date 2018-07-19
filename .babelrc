@@ -1,0 +1,37 @@
+{
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "inline-import",
+          {
+            "extensions": [".css"]
+          }
+        ]
+      ],
+      "presets": ["next/babel", "@zeit/next-typescript/babel"]
+    },
+    "production": {
+      "plugins": [
+        [
+          "inline-import",
+          {
+            "extensions": [".css"]
+          }
+        ]
+      ],
+      "presets": ["next/babel", "@zeit/next-typescript/babel"]
+    },
+    "test": {
+      "plugins": [
+        [
+          "inline-import",
+          {
+            "extensions": [".css"]
+          }
+        ]
+      ],
+      "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }], "@zeit/next-typescript/babel"]
+    }
+  }
+}

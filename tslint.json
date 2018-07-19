@@ -1,0 +1,16 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "no-submodule-imports": false,
+    "trailing-comma": "never",
+    "jsx-boolean-value": "never",
+    "no-shadowed-variable": [ true, { "function": false } ]
+  },
+  "linterOptions": {
+      "exclude": [
+        "node_modules/**",
+        ".next/**"
+      ]
+  }
+}
